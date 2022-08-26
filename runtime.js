@@ -65,7 +65,10 @@ const extraLargeArray = getSizedArray(100000);
 // insert 1.2417558 s
 // append 7.0502 ms
 
+//The append function (using the push() method) has a better scale for worst case scenarios than the insert function. We can see the time that takes to run each function. As the input gets bigger, the time to perform the append function grows somewhat linearly, and the time to perform the insert function grows more exponentially. This is why: 
 
+// - The append function has a time complexity of O(n)
+// - The insert function has a time complexity of O(n^2)
 
 // Try it with first function
 perf.start();                     // Starts timer
