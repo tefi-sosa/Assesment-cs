@@ -70,6 +70,8 @@ const extraLargeArray = getSizedArray(100000);
 // - The append function has a time complexity of O(n)
 // - The insert function has a time complexity of O(n^2)
 
+// Another way to explain this is, both functions have a for loop that iterates through every element in the array. So, if the time to run a for loop will be directly related to the size of the input array. This is what is called O(n) time complexity. Now, for the append function, the push() method has a base time complexity of O(1) and therefore the overall time complexity of the function is O(n). As of the insert function, the unshift() method has a time complexity of O(n), wich combined with the complexity of the for loop, the overall is O(n^2).
+
 // Try it with first function
 perf.start();                     // Starts timer
 doublerAppend(tinyArray);
