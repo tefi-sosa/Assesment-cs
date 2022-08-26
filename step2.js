@@ -33,7 +33,7 @@ addToZero([1, 2, 3, -2]);
 
 //////// HAS UNIQUE CHARACTERS ////////
 
-// Time complexity O(1)
+// Time complexity O(n) --> Set has a time complexity of n !
 // Space complexity O(1)
 
 function hasUniqueChars (word) {
@@ -48,7 +48,7 @@ console.log(hasUniqueChars("Moonday"));
 
 /////////// PANGRAM SENTENCE  ///////////////
 
-//time complexity O(1)
+//time complexity O(n)
 // space complexity O(1)
 
 function isPangram (arr) {
